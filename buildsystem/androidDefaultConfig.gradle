@@ -1,0 +1,39 @@
+if (project.hasProperty('android')) {
+    project.plugins.apply("kotlin-android")
+
+    android {
+        compileSdkVersion 33
+        buildToolsVersion "30.0.3"
+        defaultConfig {
+            minSdkVersion 21
+            targetSdkVersion 33
+            versionCode 1
+            versionName "1.0"
+        }
+
+        buildFeatures {
+            viewBinding true
+        }
+
+        buildTypes {
+            release {
+            }
+            debug {
+            }
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        resourcePrefix "${project.name}_"
+    }
+
+    dependencies {
+        def deps = rootProject.ext.dependencies
+
+        implementation deps.kotlin
+    }
+
+}

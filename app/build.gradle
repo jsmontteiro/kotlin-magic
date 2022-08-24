@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+apply from: rootProject.file('buildsystem/androidDefaultConfig.gradle')
+
+android {
+    defaultConfig {
+        applicationId "br.com.montteiro.kotlinpokedex"
+    }
+
+    resourcePrefix ""
+}
+
+dependencies {
+    def deps = rootProject.ext.dependencies
+    def testDeps = rootProject.ext.testDependencies
+
+    implementation project(":features:pokedex")
+    implementation project(":libraries:common")
+    implementation project(":libraries:network")
+    implementation project(":libraries:ui_components")
+
+    implementation deps.koin
+
+    testImplementation testDeps.jUnit
+    testImplementation testDeps.koinTest
+}
+repositories {
+    mavenCentral()
+}

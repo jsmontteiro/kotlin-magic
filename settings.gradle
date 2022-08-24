@@ -1,0 +1,6 @@
+rootProject.name = "KotlinPokedex"
+include ':app'
+include ':features:pokedex'
+include ':libraries:ui_components'
+include ':libraries:network'
+include ':libraries:common'
