@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ApiClientBuilder {
     private val baseClient = OkHttpClient.Builder().build()
 
-    private const val defaultUrl = "https://pokeapi.co/api/v2/"
+    private const val defaultUrl = "https://api.magicthegathering.io/v1/"
 
     fun <T> createServiceApi(
         serviceClass: Class<T>,

@@ -1,10 +1,10 @@
 # (In progress)
 
-## PokemonTCG
+## Kotlin Magic Cards
 Project used in the unique edition of the course "Coding android with [José](https://github.com/jsmontteiro)"
-consuming the api https://pokeapi.co/
+consuming the api https://api.magicthegathering.io/v1/cards
 
-<img src="https://assets.materialup.com/uploads/7f1c1db6-86fd-449e-b836-336a31b23a75/preview.png" width="275">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/Magic_the_gathering-card_back.jpg/220px-Magic_the_gathering-card_back.jpg" width="275">
 
 #### Language
 - Kotlin

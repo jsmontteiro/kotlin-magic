@@ -3,7 +3,7 @@ apply from: rootProject.file('buildsystem/androidDefaultConfig.gradle')
 
 android {
     defaultConfig {
-        applicationId "br.com.montteiro.kotlinpokedex"
+        applicationId "br.com.montteiro.kotlinmagic"
     }
 
     resourcePrefix ""
@@ -13,7 +13,7 @@ dependencies {
     def deps = rootProject.ext.dependencies
     def testDeps = rootProject.ext.testDependencies
 
-    implementation project(":features:pokedex")
+    implementation project(":features:cards")
     implementation project(":libraries:common")
     implementation project(":libraries:network")
     implementation project(":libraries:ui_components")

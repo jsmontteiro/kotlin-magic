@@ -1,8 +1,8 @@
-package features.pokedex.di
+package libraries.common.di
 
 import org.koin.core.module.Module
 
-object PokedexModule {
+class CommonModule {
     fun getModules(): Array<Module> = arrayOf(
 
     )

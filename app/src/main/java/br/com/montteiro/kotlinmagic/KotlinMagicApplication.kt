@@ -1,11 +1,11 @@
-package br.com.montteiro.kotlinpokedex
+package br.com.montteiro.kotlinmagic
 
 import android.app.Application
-import br.com.montteiro.pokedex.di.AppModule
+import br.com.montteiro.kotlinmagic.di.AppModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
-class KotlinPokedexApplication() : Application(){
+class KotlinMagicApplication() : Application(){
 
     override fun onCreate() {
         super.onCreate()
@@ -14,9 +14,8 @@ class KotlinPokedexApplication() : Application(){
 
     private fun setupKoin() {
         startKoin {
-            androidContext(this@KotlinPokedexApplication)
+            androidContext(this@KotlinMagicApplication)
             modules(AppModule.getModules())
         }
     }
-
 }

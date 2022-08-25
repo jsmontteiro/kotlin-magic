@@ -8,6 +8,7 @@ internal class BasicLoggerInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request().newBuilder().let { builder ->
             builder.addHeader("Content-Type", "application/json")
+            builder.addHeader("Count", "1")
 
             builder.build()
         }

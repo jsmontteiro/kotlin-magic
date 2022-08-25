@@ -9,6 +9,7 @@ ext {
             retrofit              : '2.9.0',
             gson                  : '2.9.1',
             httpLoggingInterceptor: '4.9.0',
+            glide                 : '4.13.2',
 
             koin                  : '3.2.0',
 
@@ -19,16 +20,17 @@ ext {
             coroutinesTest        : "1.3.5"
     ]
     dependencies = [
-            kotlin               : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}",
-            viewModelKtx         : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}",
-            koin                 : "io.insert-koin:koin-android:${versions.koin}",
-            constraintLayout     : "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}",
-            appCompat            : "androidx.appcompat:appcompat:${versions.appCompat}",
-            material             : "com.google.android.material:material:${versions.material}",
-            retrofit             : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
-            gson                 : "com.google.code.gson:gson:${versions.gson}",
-            retrofitGsonConverter: "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
-            httpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${versions.httpLoggingInterceptor}",
+            kotlin                 : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}",
+            viewModelKtx           : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}",
+            koin                   : "io.insert-koin:koin-android:${versions.koin}",
+            constraintLayout       : "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}",
+            appCompat              : "androidx.appcompat:appcompat:${versions.appCompat}",
+            material               : "com.google.android.material:material:${versions.material}",
+            retrofit               : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            gson                   : "com.google.code.gson:gson:${versions.gson}",
+            retrofitGsonConverter  : "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
+            httpLoggingInterceptor : "com.squareup.okhttp3:logging-interceptor:${versions.httpLoggingInterceptor}",
+            glide                  : "com.github.bumptech.glide:glide:${versions.glide}"
     ]
 
 
