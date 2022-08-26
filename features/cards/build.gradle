@@ -13,4 +13,7 @@ dependencies {
     implementation deps.material
     implementation deps.constraintLayout
     implementation deps.koin
+
+    testImplementation project(":libraries:testutils")
+    testImplementation testDeps.koinTest
 }

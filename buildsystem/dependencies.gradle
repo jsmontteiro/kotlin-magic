@@ -38,7 +38,7 @@ ext {
             androidCoreTesting: "androidx.arch.core:core-testing:${versions.archCore}",
             jUnit             : "junit:junit:${versions.jUnit}",
             mockk             : "io.mockk:mockk:${versions.mockk}",
-            koinTest          : "org.koin:koin-test:${versions.koin}",
+            koinTest          : "io.insert-koin:koin-test:${versions.koin}",
             mockWebServer     : "com.squareup.okhttp3:mockwebserver:${versions.mockWebServer}",
             coroutinesTest    : "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.coroutinesTest}",
     ]

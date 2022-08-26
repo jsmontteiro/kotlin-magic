@@ -10,7 +10,8 @@ internal class CardsNetworkRepository(private val api: CardsApi) : CardsReposito
         val cards = apiResponse?.cards?.map {
             Card(
                 id = it.id,
-                imageUrl = it.imageUrl
+                imageUrl = it.imageUrl,
+                name = it.name
             )
         }
         return cards ?: emptyList()
